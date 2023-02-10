@@ -1,0 +1,173 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+/* Contenedor principal */
+.Container_Principal {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* contenedor secundario */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Encabezado */
+header {
+  background-color: rgb(32, 84, 165);
+  padding: 20px;
+}
+
+header h1 {
+  color: white;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+header p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+/* Sección de características */
+.features {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+
+/* Cada característica */
+.feature {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  padding: 20px;
+  height: 80%;
+}
+
+/* Título de cada característica */
+.feature h3 {
+  font-size: 24px;
+  color: rgb(32, 84, 165);
+  margin-bottom: 20px;
+}
+
+/* Descripción de cada característica */
+.feature p {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+}
+
+/* imagen del feature */
+.feature_img {
+  object-fit: cover;
+  width: 40%;
+  padding-bottom: 3%;
+}
+.feature_img_2 {
+  object-fit: cover;
+  width: 25%;
+  padding-bottom: 1%;
+}
+.feature_img_3 {
+  object-fit: cover;
+  width: 30%;
+}
+/* Botón */
+.cta {
+  background-color: rgb(255, 180, 0);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(32, 84, 165);
+  color: white;
+  padding: 15px;
+  text-align: center;
+
+}
+
+/* animaciones */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.elemento1 {
+  animation: aparecer 4s ease-in-out;
+}
+
+.elemento2 {
+  animation: aparecer 5s ease-in-out;
+}
+.elemento3 {
+  animation: aparecer 6s ease-in-out;
+}
+
+@keyframes desplazamiento {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.Titulo {
+  animation: desplazamiento 1.5s ease-in-out;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  section.features {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .feature {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .Container_Principal{
+    height: 100%;
+    margin: 25px;
+  }
+  footer{
+    margin: 15px;
+  }
+  header{
+    margin-top: 15px;
+  }
+}
