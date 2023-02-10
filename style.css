@@ -120,14 +120,14 @@ footer {
 }
 
 .elemento1 {
-  animation: aparecer 4s ease-in-out;
+  animation: aparecer 3s ease-in-out;
 }
 
 .elemento2 {
-  animation: aparecer 5s ease-in-out;
+  animation: aparecer 3.5s ease-in-out;
 }
 .elemento3 {
-  animation: aparecer 6s ease-in-out;
+  animation: aparecer 4s ease-in-out;
 }
 
 @keyframes desplazamiento {
